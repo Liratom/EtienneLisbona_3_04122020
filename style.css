@@ -1,0 +1,436 @@
+*
+{
+    font-family: Roboto;
+}
+.conteneur
+{
+    max-width: 435px!important;
+    margin: auto;
+
+ }
+ @media screen and (max-width:1700px)
+ {
+  a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    h1
+    {
+        font-size: 25px;
+    }
+    body
+    {
+        display: flex; 
+        flex-flow: column wrap; 
+        align-items: center;
+        margin: 0;
+    }
+    header
+    {
+        width: 100%;
+        margin-top: 15px; 
+      }
+      .nav
+    .retour
+    {
+        display: flex;
+    }
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .gps
+    {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 0 16px 0;
+        box-shadow: inset 0px 5px 8px -6px grey;
+       
+    }
+       .menuimg img
+    {
+        position: relative;
+        z-index: -1;
+        width: 100%;
+    }
+    .fa-map-marker-alt
+    {
+        margin-right: 10px;
+    }
+    .fas
+    {
+        color: #929292;
+        margin-right: 10px;
+    }
+    .fa-store
+    {
+        color: #9356DC;
+    }
+    .explorer
+    {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        padding-bottom: 40px;
+        text-align: center;
+        background-color: #f2f2f2a6;
+    }
+    .decouvrez,.reservez
+    {
+        padding: 0 40px 16px;
+    }
+    .btn
+    {
+        align-self: center;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: linear-gradient(95deg, #FF79DA,#9356DC );
+        padding: 13px;
+        width: 50%;
+        box-shadow: 0 0 15px 5px lightgray;
+        cursor: pointer;
+    }
+    section
+    {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+    }
+    .menu
+    {
+        background: #f2f2f2;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        margin-top:-45px;
+        align-items: center;
+    }
+    .menu h1
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .menu h1 i
+    {
+        bottom: 16px;
+        position: relative;
+    }
+    .fonctionnement h1
+    {
+        margin: 20px 0 10px 0 ;
+    }
+    .menutxt
+    {
+        margin: 20px;
+        text-transform: uppercase;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 10%;
+    }
+    .menuliste
+    {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    .menucontenu
+    {
+        padding: 5px 5px 16px 5px;      
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    .menustyle
+    {
+        background: white;
+        border-radius: 20px;
+        margin:10px 20px; 
+        box-shadow: 0 0 16px lightgrey; 
+       
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: bold;
+        
+    }
+  
+   
+    span.menuhover
+    {
+        display: inline-flex;
+        margin-left: 7px;
+        height: 75px;
+        width: 0%;
+        background: #99E2D0;
+        text-align: center;
+        float: right;
+        opacity: 1;
+        transition:all 215ms;  
+    }
+
+    .menustyle:hover .fa-check-circle
+    {
+        transform: rotate(20deg);
+    }
+    .menustyle:hover span
+    {
+        width: 20%;
+        
+    }
+    .fa-check-circle
+    {
+        margin-left: 26px;
+        align-self: center  ;
+        font-size: 23px;
+        margin-right: 0;
+        color: white;
+       
+    }
+    .menustyle:nth-child(2)
+    {
+         animation: fadein 1s;
+    }
+   .menustyle:nth-child(3)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(4)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(6)
+    {
+         animation: fadein 1s;
+    }
+    .menustyle:nth-child(7)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(8)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(10)
+    {
+        animation: fadein 1s;
+    }
+    .menustyle:nth-child(11)
+    {
+        animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(12)
+    {
+        animation: fadein 2.2s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+            transform:matrix(1, 0, 0, 1, 0, 15);
+            
+
+        }
+        to {
+            opacity:1;
+
+        }
+    }
+    @-moz-keyframes fadein { /* sur Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* sur Safari et Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* sur Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    h5,h4
+    {
+        margin: 0;
+    }
+    .menucontenu h4
+    {
+        font-size: 20px;   
+    }
+
+    }
+    .menudescri
+    {
+        font-weight: 300;
+        margin-top: 6px;
+    }
+    .menuprix
+    {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -35px;
+    margin-right: 15px;
+    }
+    .liste
+    {
+        padding:0px;
+        list-style: none;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .fonclist
+    {
+        display: flex;
+        align-items: center;
+        border-radius: 23px;
+        padding-bottom: 50PX;
+        background-color: #f2f2f2;
+        margin-top: 25px;
+        padding: 18px 3em 18px 5px;
+        box-shadow: 0 0 16px lightgrey;
+        /* width: 8em; */
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+    .fafonc
+    {
+        float: left;
+    }
+    .foncdegrade
+    {
+        background : linear-gradient(95deg,#ff79da5e,#9356dc73 );
+    }
+    .onetwothree
+    {
+        color: white;
+        text-align: center;
+        background-color: #9356DC;
+        border-radius: 50%;
+        padding: 0.2em;
+        right: 1em;
+        width: 1.2em;
+        position: relative;
+        size: 1px;
+    }
+   
+    .restaurants
+    {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background: #f2f2f2;
+        padding-bottom: 50PX;
+    }
+    .restaurants h1
+    {
+        align-self: flex-start;
+        margin-left: 40px;
+    }
+    .result
+   { 
+    width: 90%;
+    box-shadow: 0 0 15px lightgray;
+    padding-bottom: 0px;
+    background: white;
+    border-radius: 20px; 
+    margin: 10px;
+   }
+   .imgrest img
+   {
+       width: 100%;
+       height: 170px;
+       object-fit: cover;
+       border-radius: 20px 20px 0 0;
+   }
+   .new
+   {
+       background-color: rgb(153, 226, 208);
+       color:rgb(10, 140, 109);
+       position: absolute;
+       right: 50px;
+       margin-top:15px;
+       padding: 5px;
+    border-radius: 2px;
+   }
+   .description
+   {
+       padding: 5px;
+       margin-left: 10px;
+   }
+   .fa-heart
+   {
+       float: right;
+       margin: 16px;
+       font-size: 25px;
+   }
+   .fa-heart:hover
+   {
+       font-weight: 600;
+       background: -webkit-linear-gradient(80deg, #FF79DA,#9356DC);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
+   .nom
+   {
+       font-weight: bold;
+       font-size: 18px;
+   }
+   .lieu
+   {
+       margin: 5px 0 15px 0;
+   }
+   footer
+   {
+        background:rgb(53, 53, 53);
+        width: 100%;
+   }
+   .farestau,.famain
+   {
+       color: white;
+       font-size: 12px;
+   }
+   .footermain
+   {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+   }
+   footer div img
+   {
+       filter: brightness(100);
+       max-width: 35%;
+       margin: 20px 0 0 20px;
+   }
+   .footermain ul
+   {
+       list-style: none;
+       margin-left: -20px;
+    }
+    .footermain ul li a
+    {
+        color: white;
+    }
+    .highlight
+    {
+        font-weight: bold;
+    }
+ }
