@@ -2,15 +2,49 @@
 {
     font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
 }
-.conteneur
+ul
 {
-    max-width: 435px!important;
-    margin: auto;
-
+    list-style: none;
  }
- @media screen and (max-width:1700px)
- {
-  a
+.footermain ul li a:hover
+    {
+        color: white;
+        text-decoration: underline;
+
+    }
+.footermain ul li a
+    {
+        color: white;
+    }
+    .img-pdg
+    {
+        background-image: url(../p3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-position-y: -340px;
+    }
+
+    .img-ne
+    {
+        background-image: url(../p3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-position-y: -48em;
+    }
+    .img-alf
+    {
+        background-image: url(../p3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-position-y: 43em;
+    }
+    .img-ldds
+    {
+        background-image: url(../p3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-position-y: 43em;
+    }
+@media screen and (min-width:700px)
+{
+    .conteneur
+    {
+        
+        margin: auto;
+     }
+     a
     {
         color: black;
         text-decoration: none;
@@ -19,7 +53,7 @@
     {
         font-size: 25px;
     }
-    body
+     body
     {
         display: flex; 
         flex-flow: column wrap; 
@@ -36,11 +70,23 @@
         margin-top: -16px;
         margin-bottom: 10px;
     }
+    header
+    {
+        width: 100%;
+        margin-top: 15px; 
+    }
+    .navmenu
+    {
+        margin-top: -16px;
+        margin-bottom: 10px;
+    }
     .retour
     {
         align-self: center;
         position: relative;
         top:25px;
+        margin-left: 50px;
+        font-size: 2vw;
     }
     .retour:hover
     {
@@ -67,11 +113,573 @@
         box-shadow: inset 0px 5px 8px -6px grey;
        
     }
-       .menuimg img
+       .menuimg
     {
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+        height: 430px;
+        box-shadow: inset 0px 5px 8px -6px grey;
+        object-fit: cover;
+    }
+   
+    .fa-map-marker-alt
+    {
+        margin-right: 10px;
+    }
+    .fas
+    {
+        color: #929292;
+        margin-right: 10px;
+    }
+    .fa-store
+    {
+        color: #9356DC;
+    }
+    .explorer
+    {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        padding-bottom: 40px;
+        text-align: center;
+        background-color: #f2f2f2a6;
+    }
+   
+    .btn
+    {
+        align-self: center;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: linear-gradient(95deg, #FF79DA,#9356DC );
+        padding: 13px;
+        width: 20%;
+        box-shadow: 0 0 15px 5px lightgray;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    .btn:hover
+    {
+        transform: scale(0.95);
+    }
+    section
+    {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+    }
+    .menu
+    {
+        background: #f2f2f2;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        margin-top:-45px;
+        align-items: center;
+    }
+    .titre h1
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .titre h1 i
+    {
+        bottom: 16px;
+        position: relative;
+    }
+    .titre
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.3em;
+    }
+    .fonctionnement
+    {
+        margin: 20px 20px;
+    }
+    .fonctionnement h1
+    {
+        margin: 20px 0 10px 20px ;
+    }
+    .menutxt
+    {
+        margin: 20px;
+        text-transform: uppercase;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .menuliste
+    {
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .menucontenu
+    {
+        padding: 5px 5px 16px 5px;      
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 1vw;
+    }
+    .menustyle
+    {
+        background: white;
+        border-radius: 20px;
+        margin:10px 20px; 
+        box-shadow: 0 0 16px lightgrey; 
+        white-space: nowrap;
+        font-weight: bold;
+        overflow: hidden;
+        width: 26%;
+        
+    }
+  
+   
+    span.menuhover
+    {
+        display: inline-flex;
+        margin-left: 7px;
+        height: 90px;
+        width: 0%;
+        background: #99E2D0;
+        text-align: center;
+        float: right;
+        opacity: 1;
+        transition:all 215ms;  
+    }
+
+    .menustyle:hover .fa-check-circle
+    {
+        transform: rotate(360deg);
+        transition:450ms;
+    }
+    .menustyle:hover span.menuhover
+    {
+        width: 22%;
+        
+    }
+    .fa-check-circle
+    {
+        margin-left: 20px;
+        align-self: center  ;
+        font-size: 23px;
+        margin-right: 0;
+        color: white;
+       
+    }
+    .menustyle:nth-child(2)
+    {
+         animation: fadein 1s;
+    }
+   .menustyle:nth-child(3)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(4)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(6)
+    {
+         animation: fadein 1s;
+    }
+    .menustyle:nth-child(7)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(8)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(10)
+    {
+        animation: fadein 1s;
+    }
+    .menustyle:nth-child(11)
+    {
+        animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(12)
+    {
+        animation: fadein 2.2s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+            transform:matrix(1, 0, 0, 1, 0, 15);
+            
+
+        }
+        to {
+            opacity:1;
+
+        }
+    }
+    @-moz-keyframes fadein { /* sur Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* sur Safari et Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* sur Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    h5,h4
+    {
+        margin: 0;
+        font-size: 1.1vw;  
+    }
+    .menucontenu h4
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    
+    .menudescri
+    {
+        font-weight: 300;
+        margin-top: 15px;
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .menuprix
+    {
+        display: flex;
+        float: right;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .liste
+    {
+        padding:0px;
+
+        margin: 0;
+        align-self: center;
+        display: flex;
+        
+    }
+    .fonclist
+    {
+        display: flex;
+        align-items: center;
+        border-radius: 23px;
+        padding-bottom: 50PX;
+        background-color: #f2f2f2;
+        margin: 25px;
+        padding: 18px 3em 18px 5px;
+        box-shadow: 0 0 16px lightgrey;
+        /* width: 8em; */
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+    .fafonc
+    {
+        float: left;
+    }
+    .foncdegrade
+    {
+        background : linear-gradient(95deg,#ff79da5e,#9356dc73 );
+    }
+    .onetwothree
+    {
+        color: white;
+        text-align: center;
+        background-color: #9356DC;
+        border-radius: 50%;
+        padding: 0.2em;
+        right: 1em;
+        width: 1.2em;
+        position: relative;
+        size: 1px;
+    }
+   .list-restau
+    {
+        background: #f2f2f2;
+    }
+    .restaurants
+    {
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 50PX;
+        justify-content: center;
+    }
+    .list-restau h1
+    {
+        align-self: flex-start;
+        margin-left: 40px;
+    }
+    .result
+   { 
+    width: 20%;
+    box-shadow: 0 0 15px lightgray;
+    padding-bottom: 0px;
+    background: white;
+    border-radius: 20px; 
+    margin: 10px;
+    transition: 200ms;
+   }
+   .result:hover
+   {
+       transform: scale(1.05);
+   }
+   .imgrest img
+   {
+       width: 100%;
+       height: 170px;
+       object-fit: cover;
+       border-radius: 20px 20px 0 0;
+   }
+   .new
+   {
+       background-color: rgb(153, 226, 208);
+       color:rgb(10, 140, 109);
+       position: absolute;
+
+       margin-top:15px;
+       padding: 5px;
+    border-radius: 2px;
+   }
+   .description
+   {
+       padding: 5px;
+       margin-left: 10px;
+   }
+   .fa-heart
+   {
+       float: right;
+       margin: 16px;
+       font-size: 25px;
+   }
+   .fa-heart:hover
+   {
+       font-weight: 600;
+       background: -webkit-linear-gradient(80deg, #FF79DA,#9356DC);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
+   .nom
+   {
+       font-weight: bold;
+       font-size: 18px;
+   }
+   .lieu
+   {
+       margin: 5px 0 15px 0;
+   }
+   footer
+   {
+        background:rgb(53, 53, 53);
+        width: 100%;
+   }
+   .farestau,.famain
+   {
+       color: white;
+       font-size: 12px;
+   }
+   .footermain
+   {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: center;
+    place-content: space-between;
+    padding: 0 70px;
+   }
+   footer div img
+   {
+       filter: brightness(100);
+       max-width: 35%;
+   }
+   .footermain ul
+   {
+       display: flex;
+       flex-flow: row wrap;
+   }
+    .footermain ul li 
+    {
+        margin-bottom: 7px;
+        margin-right: 20px;
+    }
+    .footermain ul li a
+    {
+        margin-right: 20px;
+    }
+    
+    .highlight
+    {
+        font-weight: bold;
+    }
+ 
+ }
+ @media screen and (max-width:1160px)
+ {
+    .result
+    {
+        width: 35%;
+        
+    }
+ }
+ @media screen and (max-width: 1076px)
+ {
+     h4
+     {
+         font-size: 1.3vw;
+     }
+     .footermain
+     {
+        display: flex;
+        /* align-items: flex-start; */
+        justify-content: unset; 
+        align-items: center;
+        place-content: space-around;
+        padding: 0 70px;
+     }
+    .footermain ul
+    {
+        flex-flow: column wrap;
+    }
+    .fonclist
+    {
+        margin: 12px;
+    }
+    .menustyle
+    {
+        width: 26%;
+        margin: 10px 10px;
+        
+    }
+    .menustyle:hover span.menuhover
+    {
+        width: 30%;
+        
+    }
+    .menucontenu
+    { 
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 1.2vw;
+    }
+
+ }
+ @media screen and (max-width:947px)
+ {
+     .liste
+     {
+         flex-flow: column wrap;
+         width: 100%;
+     }
+ }
+ @media screen and (max-width:700px)
+ {
+    *
+    {
+        font-size: 3vw;
+    }
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    h1
+    {
+        font-size: 6vw;
+    }
+     body
+    {
+        display: flex; 
+        flex-flow: column wrap; 
+        align-items: center;
+        margin: 0;
+    }
+    .conteneur
+    {
+        width: 100%;
+    }
+    header
+    {
+        width: 100%;
+        margin-top: 15px; 
+    }
+    .navmenu
+    {
+        margin-top: -16px;
+        margin-bottom: 10px;
+    }
+    .retour
+    {
+        align-self: center;
+        position: relative;
+        top:25px;
+        margin-left: 50px;
+        font-size: 5vw;     
+    }
+    .retour:hover
+    {
+        color: black;
+    }
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+    
+    }
+    .logo a img
+    {
+      
+      
+    }
+    .gps
+    {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 0 16px 0;
+        box-shadow: inset 0px 5px 8px -6px grey;
+       
+    }
+
+       .menuimg
+    {
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: inherit;
         position: relative;
         z-index: -1;
         width: 100%;
+        height: 220px;
+        box-shadow: inset 0px 5px 8px -6px grey;
+        object-fit: cover;
+    }
+    
+    .img-ne
+    {
+        background-position-y: 31em;
     }
     .fa-map-marker-alt
     {
@@ -107,11 +715,19 @@
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
-        background: linear-gradient(95deg, #FF79DA,#9356DC );
+        background:
+        linear-gradient(180deg, rgba(255,121,218,1) 0%,
+        rgba(147,86,220,0.9167017148656338) 90%,
+        rgba(147,86,220,1) 96%);
         padding: 13px;
         width: 50%;
         box-shadow: 0 0 15px 5px lightgray;
         cursor: pointer;
+        transition: 300ms;
+    }
+    .btn:hover
+    {
+        transform: scale(0.95);
     }
     section
     {
@@ -127,19 +743,22 @@
         margin-top:-45px;
         align-items: center;
     }
-    .menu h1
+    .titre h1
     {
         text-align: center;
         width: 100%;
     }
-    .menu h1 i
+    .titre h1 i
     {
         bottom: 16px;
         position: relative;
     }
-    .fonctionnement h1
+    .titre
     {
-        margin: 20px 0 10px 0 ;
+        display: flex;
+        place-items: center;
+        width: 100%;
+        font-size: 1.3em;
     }
     .menutxt
     {
@@ -151,12 +770,11 @@
     }
     .menuliste
     {
-        list-style: none;
         padding: 0;
         width: 100%;
         display: flex;
         flex-flow: column wrap;
-        
+        align-content: center;        
     }
     .menucontenu
     {
@@ -177,7 +795,7 @@
         white-space: nowrap;
         font-weight: bold;
         overflow: hidden;
-        
+        width: 90%;
     }
   
    
@@ -208,7 +826,7 @@
     {
         margin-left: 26px;
         align-self: center  ;
-        font-size: 23px;
+        font-size: 6vw;
         margin-right: 0;
         color: white;
        
@@ -291,15 +909,19 @@
     }
     .menucontenu h4
     {
-        font-size: 20px;   
+        font-size: 4vw;  
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    }
+    
     .menudescri
     {
         font-weight: 300;
         margin-top: 15px;
         margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .menuprix
@@ -312,9 +934,10 @@
     .liste
     {
         padding:0px;
-        list-style: none;
-        margin: 0;
-        margin-bottom: 60px;
+        margin: 0px;
+        margin-bottom: 30px;
+        width: 90%;
+        align-self: center;
     }
     .fonclist
     {
@@ -323,7 +946,7 @@
         border-radius: 23px;
         padding-bottom: 50PX;
         background-color: #f2f2f2;
-        margin-top: 25px;
+        margin-bottom: 25px;
         padding: 18px 3em 18px 5px;
         box-shadow: 0 0 16px lightgrey;
         /* width: 8em; */
@@ -337,7 +960,7 @@
     }
     .foncdegrade
     {
-        background : linear-gradient(95deg,#ff79da5e,#9356dc73 );
+        background :linear-gradient(90deg, rgba(147,86,220,0.20521712102809875) 0%, rgba(147,86,220,0.10717790534182425) 100%);
     }
     .onetwothree
     {
@@ -357,13 +980,17 @@
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        background: #f2f2f2;
+       
         padding-bottom: 50PX;
     }
-    .restaurants h1
+    .list-restau
     {
-        align-self: flex-start;
-        margin-left: 40px;
+        background: #f2f2f2;    
+    }
+    section h1
+    {
+        
+        margin: 30px 20px;
     }
     .result
    { 
@@ -373,6 +1000,11 @@
     background: white;
     border-radius: 20px; 
     margin: 10px;
+    transition: 200ms;
+   }
+   .result:hover
+   {
+       transform: scale(1.05);
    }
    .imgrest img
    {
@@ -389,7 +1021,7 @@
        right: 50px;
        margin-top:15px;
        padding: 5px;
-    border-radius: 2px;
+        border-radius: 2px;
    }
    .description
    {
@@ -398,7 +1030,7 @@
    }
    .fa-heart
    {
-       float: right;
+       float:right;
        margin: 16px;
        font-size: 25px;
    }
@@ -412,7 +1044,7 @@
    .nom
    {
        font-weight: bold;
-       font-size: 18px;
+       font-size: 4.5vw;
    }
    .lieu
    {
@@ -433,6 +1065,8 @@
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
+    place-content: baseline;
+    padding: 0  ;
    }
    footer div img
    {
@@ -442,20 +1076,16 @@
    }
    .footermain ul
    {
-       list-style: none;
        margin-left: -20px;
     }
     .footermain ul li 
     {
         color: white;
         margin-bottom: 7px;
-    }
-    .footermain ul li a
-    {
-        color: white;
-    }
+    }    
     .highlight
     {
         font-weight: bold;
     }
  
+ }
