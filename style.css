@@ -326,7 +326,7 @@ ul
 
         }
     }
-    }
+    
     h5,h4
     {
         margin: 0;
@@ -397,7 +397,6 @@ ul
         right: 1em;
         width: 1.2em;
         position: relative;
-        size: 1px;
     }
    .list-restau
     {
