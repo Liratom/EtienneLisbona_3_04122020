@@ -1,11 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 *
 {
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+    font-family: 'Roboto', sans-serif,'Shrikhand', cursive;    
 }
 ul
 {
     list-style: none;
  }
+ .logo a img
+    {
+      
+      margin-bottom: 10px;
+    }
+ .menustyle:nth-child(2)
+    {
+         animation: fadein 1s;
+    }
+   .menustyle:nth-child(3)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(4)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(5)
+    {
+         animation: fadein 2.8s;
+    }
+    .menustyle:nth-child(6)
+    {
+         animation: fadein 1s;
+    }
+    .menustyle:nth-child(7)
+    {
+         animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(8)
+    {
+         animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(9)
+    {
+         animation: fadein 2.8s;
+    }
+    .menustyle:nth-child(10)
+    {
+        animation: fadein 1s;
+    }
+    .menustyle:nth-child(11)
+    {
+        animation: fadein 1.6s;
+    }
+    .menustyle:nth-child(12)
+    {
+        animation: fadein 2.2s;
+    }
+    .menustyle:nth-child(13)
+    {
+        animation: fadein 2.8s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+            transform:matrix(1, 0, 0, 1, 0, 15);
+            
+
+        }
+        to {
+            opacity:1;
+
+        }
+    }
+    
+ .lds-ring {
+    position: fixed;
+    top: 200px;
+    width: 80px;
+    height: 80px;
+    animation:ringmain 1s ease-in 2.5s forwards;
+    z-index: 100;
+  }
+  @keyframes ringmain {
+    to
+    {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+  
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 4s cubic-bezier(0.5, 0, 0.5, 1) 1;
+    border-color: rgb(243, 107, 209) transparent transparent transparent;
+  }
+  
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+    border-color:#9356DC transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+    border-color:#9256dc98 transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+   from
+   {
+      transform: rotate(0deg);
+}
+    to{
+      transform: rotate(360deg);
+
+    }
+  }  
+.cont-index
+{
+   animation-name: loading;
+    animation-duration: 3s;
+}
+@keyframes loading {
+    from {
+        opacity:0;
+        
+
+    }
+    60%{
+        opacity: 0;
+    }
+    75% {
+        opacity:0.5;
+
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+.fafonc
+{
+    margin: 0 10px  ;
+}
 .footermain ul li a:hover
     {
         color: white;
@@ -26,21 +171,83 @@ ul
     }
     .img-pdg
     {
-        background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-image: url(../p3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     }
 
     .img-ne
     {
-        background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-image: url(../p3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     }
     .img-alf
     {
-        background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-image: url(../p3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     }
     .img-ldds
     {
-        background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-image: url(../p3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     }
+.fonclist
+    {
+        display: flex;
+        align-items: center;
+        border-radius: 16px;
+        padding-bottom: 50PX;
+        background-color: #f2f2f2;
+        margin: 25px;
+        padding: 20px 2em 20px 5px;
+        box-shadow: 0 0 16px lightgrey;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+    .btn
+    {
+        align-self: center;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        background: linear-gradient(180deg, rgba(255,121,218,1) 2%, rgba(154,88,220,0.9755252442773985) 81%);
+        padding: 13px 20px;
+        box-shadow: 0 0 15px 5px lightgray;
+        cursor: pointer;
+        transition: 300ms;
+        font-weight: 300;
+    }
+    .btn:hover
+    {
+        transform: scale(0.95);
+    }
+.nom
+{
+    font-weight: 800;
+}
+.gps
+{
+    background-color: #f2f2f2;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0 16px 0;
+    box-shadow: inset 0px 5px 8px -6px grey;
+   
+}
+.fa-heart
+   {
+       float: right;
+       font-size: 25px;
+       margin: 16px;
+   }
+   .fa-heart:hover
+   {
+       font-weight: 600;
+       background: -webkit-linear-gradient(80deg, #FF79DA,#9356DC);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
 @media screen and (min-width:700px)
 {
     .conteneur
@@ -67,21 +274,10 @@ ul
     header
     {
         width: 100%;
-        margin-top: 15px; 
+
     }
     .navmenu
     {
-        margin-top: -16px;
-        margin-bottom: 10px;
-    }
-    header
-    {
-        width: 100%;
-        margin-top: 15px; 
-    }
-    .navmenu
-    {
-        margin-top: -16px;
         margin-bottom: 10px;
     }
     .retour
@@ -102,21 +298,8 @@ ul
         justify-content: center;
     
     }
-    .logo a img
-    {
-      
-      
-    }
-    .gps
-    {
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 16px 0 16px 0;
-        box-shadow: inset 0px 5px 8px -6px grey;
-       
-    }
+    
+  
     .fa-map-marker-alt
     {
         margin-right: 10px;
@@ -140,31 +323,21 @@ ul
         background-color: #f2f2f2a6;
     }
    
-    .btn
-    {
-        align-self: center;
-        border-radius: 20px;
-        border: 0;
-        color: white;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background: linear-gradient(95deg, #FF79DA,#9356DC );
-        padding: 13px;
-        width: 20%;
-        box-shadow: 0 0 15px 5px lightgray;
-        cursor: pointer;
-        transition: 300ms;
-    }
-    .btn:hover
-    {
-        transform: scale(0.95);
-    }
     section
     {
         display: flex;
         flex-flow: column wrap;
         margin-top: 20px;
     }
+    section h2
+    {
+        margin-left: 20px;
+    }
+    .list-restau h2
+    {
+        margin-left: 40px;
+    }
+
     .menu
     {
         background: #f2f2f2;
@@ -175,8 +348,11 @@ ul
     }
     .titre h1
     {
+        font-family: 'Shrikhand';
+        font-weight: 100;
         text-align: center;
         width: 100%;
+        
     }
     .titre h1 i
     {
@@ -266,66 +442,6 @@ ul
         color: white;
        
     }
-    .menustyle:nth-child(2)
-    {
-         animation: fadein 1s;
-    }
-   .menustyle:nth-child(3)
-    {
-         animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(4)
-    {
-         animation: fadein 2.2s;
-    }
-    .menustyle:nth-child(5)
-    {
-         animation: fadein 2.8s;
-    }
-    .menustyle:nth-child(6)
-    {
-         animation: fadein 1s;
-    }
-    .menustyle:nth-child(7)
-    {
-         animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(8)
-    {
-         animation: fadein 2.2s;
-    }
-    .menustyle:nth-child(9)
-    {
-         animation: fadein 2.8s;
-    }
-    .menustyle:nth-child(10)
-    {
-        animation: fadein 1s;
-    }
-    .menustyle:nth-child(11)
-    {
-        animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(12)
-    {
-        animation: fadein 2.2s;
-    }
-    .menustyle:nth-child(13)
-    {
-        animation: fadein 2.8s;
-    }
-    @keyframes fadein {
-        from {
-            opacity:0;
-            transform:matrix(1, 0, 0, 1, 0, 15);
-            
-
-        }
-        to {
-            opacity:1;
-
-        }
-    }
     
     h5,h4
     {
@@ -364,25 +480,8 @@ ul
         display: flex;
         
     }
-    .fonclist
-    {
-        display: flex;
-        align-items: center;
-        border-radius: 23px;
-        padding-bottom: 50PX;
-        background-color: #f2f2f2;
-        margin: 25px;
-        padding: 18px 3em 18px 5px;
-        box-shadow: 0 0 16px lightgrey;
-        /* width: 8em; */
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        font-weight: bold;
-    }
-    .fafonc
-    {
-        float: left;
-    }
+    
+    
     .foncdegrade
     {
         background : linear-gradient(95deg,#ff79da5e,#9356dc73 );
@@ -450,22 +549,9 @@ ul
        padding: 5px;
        margin-left: 10px;
    }
-   .fa-heart
-   {
-       float: right;
-       margin: 16px;
-       font-size: 25px;
-   }
-   .fa-heart:hover
-   {
-       font-weight: 600;
-       background: -webkit-linear-gradient(80deg, #FF79DA,#9356DC);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-   }
+   
    .nom
    {
-       font-weight: bold;
        font-size: 18px;
    }
    .lieu
@@ -579,7 +665,7 @@ ul
  {
     *
     {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     a
     {
@@ -588,7 +674,7 @@ ul
     }
     h1
     {
-        font-size: 6vw;
+        font-size: 7.5vw;
     }
      body
     {
@@ -596,6 +682,7 @@ ul
         flex-flow: column wrap; 
         align-items: center;
         margin: 0;
+        min-width: 360px;   
     }
     .conteneur
     {
@@ -613,11 +700,12 @@ ul
     }
     .retour
     {
+        color: #000000b0!important;
         align-self: center;
         position: relative;
-        top:25px;
-        margin-left: 50px;
-        font-size: 5vw;     
+        top:27px;
+        margin-left: 16px;
+        font-size: 7vw;     
     }
     .retour:hover
     {
@@ -629,25 +717,21 @@ ul
         justify-content: center;
     
     }
-    .logo a img
+    .gps .fas
     {
-      
-      
+        color: black;
+        margin-right: 20px;
     }
-    .gps
-    {
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 16px 0 16px 0;
-        box-shadow: inset 0px 5px 8px -6px grey;
-       
-    }
-
        .menuimg
     {
-        height: 300px;
+        height: 250px;
+        background-size: 500px;
+        background-position:bottom;
+        box-shadow: inset 0px 5px 8px -6px grey;
+    }
+    .img-ne
+    {
+        background-position-y: -150px;
     }
     .fa-map-marker-alt
     {
@@ -667,35 +751,20 @@ ul
         display: flex;
         flex-flow: column wrap;
         width: 100%;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         text-align: center;
         background-color: #f2f2f2a6;
     }
-    .decouvrez,.reservez
+    .decouvrez
     {
-        padding: 0 40px 16px;
+        padding: 0 20px 16px;
+        font-weight: 300;
+        font-size: 5vw;
     }
-    .btn
+    .reservez
     {
-        align-self: center;
-        border-radius: 20px;
-        border: 0;
-        color: white;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background:
-        linear-gradient(180deg, rgba(255,121,218,1) 0%,
-        rgba(147,86,220,0.9167017148656338) 90%,
-        rgba(147,86,220,1) 96%);
-        padding: 13px;
-        width: 50%;
-        box-shadow: 0 0 15px 5px lightgray;
-        cursor: pointer;
-        transition: 300ms;
-    }
-    .btn:hover
-    {
-        transform: scale(0.95);
+        padding: 0 40px;
+        
     }
     section
     {
@@ -703,17 +772,25 @@ ul
         flex-flow: column wrap;
         margin-top: 20px;
     }
+    section h2
+    {
+        margin-left: 20px;
+        font-size: 7vw;
+    }
     .menu
     {
         background: #f2f2f2;
         width: 100%;
-        border-radius: 20px 20px 0 0;
+        border-radius: 50px 50px 0 0;
         margin-top:-45px;
         align-items: center;
     }
     .titre h1
     {
-        text-align: center;
+        font-family: 'Shrikhand';
+        font-weight: 100;
+        text-align: start;
+        margin: 20px 35px;
         width: 100%;
     }
     .titre h1 i
@@ -764,6 +841,7 @@ ul
         font-weight: bold;
         overflow: hidden;
         width: 90%;
+        height: 75px;
     }
   
    
@@ -771,7 +849,7 @@ ul
     {
         display: inline-flex;
         margin-left: 7px;
-        height: 90px;
+        height: 75px;
         width: 0%;
         background: #99E2D0;
         text-align: center;
@@ -792,62 +870,14 @@ ul
     }
     .fa-check-circle
     {
-        margin-left: 26px;
+        margin-left: 20px;
         align-self: center  ;
         font-size: 6vw;
         margin-right: 0;
         color: white;
        
     }
-    .menustyle:nth-child(2)
-    {
-         animation: fadein 1s;
-    }
-   .menustyle:nth-child(3)
-    {
-         animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(4)
-    {
-         animation: fadein 2.2s;
-    }
-    .menustyle:nth-child(6)
-    {
-         animation: fadein 1s;
-    }
-    .menustyle:nth-child(7)
-    {
-         animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(8)
-    {
-         animation: fadein 2.2s;
-    }
-    .menustyle:nth-child(10)
-    {
-        animation: fadein 1s;
-    }
-    .menustyle:nth-child(11)
-    {
-        animation: fadein 1.6s;
-    }
-    .menustyle:nth-child(12)
-    {
-        animation: fadein 2.2s;
-    }
-    @keyframes fadein {
-        from {
-            opacity:0;
-            transform:matrix(1, 0, 0, 1, 0, 15);
-            
-
-        }
-        to {
-            opacity:1;
-
-        }
-    }
-    h5,h4
+        h5,h4
     {
         margin: 0;
     }
@@ -872,7 +902,7 @@ ul
     {
         display: flex;
         float: right;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-left: 5px;
     }
     .liste
@@ -885,22 +915,12 @@ ul
     }
     .fonclist
     {
-        display: flex;
-        align-items: center;
-        border-radius: 23px;
-        padding-bottom: 50PX;
-        background-color: #f2f2f2;
-        margin-bottom: 25px;
-        padding: 18px 3em 18px 5px;
-        box-shadow: 0 0 16px lightgrey;
-        /* width: 8em; */
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        font-weight: bold;
+        font-size: 4.5vw;
+        margin-bottom: 31px;
     }
-    .fafonc
+    .fafonc .fas
     {
-        float: left;
+        font-size: 4.5vw;
     }
     .foncdegrade
     {
@@ -930,11 +950,7 @@ ul
     {
         background: #f2f2f2;    
     }
-    section h1
-    {
-        
-        margin: 30px 20px;
-    }
+   
     .result
    { 
     width: 90%;
@@ -973,9 +989,8 @@ ul
    }
    .fa-heart
    {
-       float:right;
-       margin: 16px;
-       font-size: 25px;
+    margin: 0;
+       margin-right: 35px;
    }
    .fa-heart:hover
    {
@@ -986,7 +1001,6 @@ ul
    }
    .nom
    {
-       font-weight: bold;
        font-size: 4.5vw;
    }
    .lieu
