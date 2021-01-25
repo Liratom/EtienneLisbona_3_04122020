@@ -299,11 +299,12 @@ ul
     .logo
     {
         display: flex;
-        justify-content: center;
+        justify-content: center;   
+    }
+    .logo-margin
+    {
         margin-top:16px;
     }
-    
-  
     .fa-map-marker-alt
     {
         margin-right: 10px;
