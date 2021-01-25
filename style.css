@@ -432,9 +432,9 @@ ul
         transform: rotate(360deg);
         transition:450ms;
     }
-    .menustyle:hover span.menuhover
+        .menustyle:hover span.menuhover
     {
-        width: 22%;
+        width: 20%;
         
     }
     .fa-check-circle
