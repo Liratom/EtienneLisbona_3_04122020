@@ -68,7 +68,6 @@
     width: 100%;
     flex-flow: column wrap;
     align-content: center;
-    justify-content: none;
   }
   .menucontenu {
     text-overflow: ellipsis;
@@ -81,11 +80,11 @@
 
   .menustyle:hover span.menuhover {
     width: 20%;
-}
+  }
 
-span.menuhover {
+  span.menuhover {
     height: 75px;
-}
+  }
   .fa-check-circle {
     font-size: 6vw;
     margin-left: 20px;
