@@ -1,0 +1,109 @@
+.menustyle:nth-child(2) {
+  animation: fadein 1s;
+}
+.menustyle:nth-child(3) {
+  animation: fadein 1.6s;
+}
+.menustyle:nth-child(4) {
+  animation: fadein 2.2s;
+}
+.menustyle:nth-child(5) {
+  animation: fadein 2.8s;
+}
+.menustyle:nth-child(6) {
+  animation: fadein 1s;
+}
+.menustyle:nth-child(7) {
+  animation: fadein 1.6s;
+}
+.menustyle:nth-child(8) {
+  animation: fadein 2.2s;
+}
+.menustyle:nth-child(9) {
+  animation: fadein 2.8s;
+}
+.menustyle:nth-child(10) {
+  animation: fadein 1s;
+}
+.menustyle:nth-child(11) {
+  animation: fadein 1.6s;
+}
+.menustyle:nth-child(12) {
+  animation: fadein 2.2s;
+}
+.menustyle:nth-child(13) {
+  animation: fadein 2.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 15);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cercle {
+  position: fixed;
+  top: 200px;
+  width: 80px;
+  height: 80px;
+  animation: cerclemain 1s ease-in 2.5s forwards;
+  z-index: 100;
+}
+@keyframes cerclemain {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.cercle div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: cercle 4s cubic-bezier(0.5, 0, 0.5, 1) 1;
+  border-color: rgb(243, 107, 209) transparent transparent transparent;
+}
+
+.cercle div:nth-child(1) {
+  animation-delay: -0.45s;
+  border-color: #9356dc transparent transparent transparent;
+}
+.cercle div:nth-child(2) {
+  animation-delay: -0.3s;
+  border-color: #c799ff98 transparent transparent transparent;
+}
+.cercle div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes cercle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cont-index {
+  animation-name: loading;
+  animation-duration: 5s;
+}
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

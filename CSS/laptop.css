@@ -1,0 +1,58 @@
+@media screen and (min-width: 650px) {
+  .conteneur {
+    margin: auto;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  header {
+    width: 100%;
+  }
+  .navmenu {
+    margin-bottom: 10px;
+  }
+  .retour {
+    top: 25px;
+    margin-left: 50px;
+    font-size: 2vw;
+  }
+  .logo-margin {
+    margin-top: 16px;
+  }
+
+  .list-restau h2 {
+    margin-left: 40px;
+  }
+
+  .fonctionnement {
+    margin: 20px 20px;
+  }
+  .fonctionnement h1 {
+    margin: 20px 0 10px 20px;
+  }
+
+  h5,
+  h4 {
+    font-size: 1.1vw;
+  }
+  .menucontenu {
+    font-size: 1vw;
+  }
+
+  .list-restau h1 {
+    align-self: flex-start;
+    margin-left: 40px;
+  }
+
+  .footermain ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .footermain ul li {
+    margin-bottom: 7px;
+    margin-right: 20px;
+  }
+  .footermain ul li a {
+    margin-right: 20px;
+  }
+}

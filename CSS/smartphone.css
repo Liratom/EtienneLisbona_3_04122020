@@ -1,0 +1,148 @@
+@media screen and (max-width: 650px) {
+  * {
+    font-size: 4vw;
+  }
+  h1 {
+    font-size: 7.5vw;
+  }
+  body {
+    min-width: 360px;
+    min-height: 20%;
+  }
+  .conteneur {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .navmenu {
+    margin-top: -16px;
+    margin-bottom: 10px;
+  }
+  .retour {
+    color: #000000b0 !important;
+    top: 27px;
+    margin-left: 16px;
+    font-size: 7vw;
+  }
+  .gps .fas {
+    color: black;
+    margin-right: 20px;
+  }
+  .menuimg {
+    height: 250px;
+  }
+  .img-ne {
+    background-position-y: -150px;
+  }
+  .explorer {
+    padding-bottom: 20px;
+  }
+  .decouvrez {
+    padding: 0 20px 16px;
+    font-weight: 300;
+    font-size: 5vw;
+  }
+  .reservez {
+    padding: 0 40px;
+  }
+  section h2 {
+    font-size: 7vw;
+  }
+  .menu {
+    border-radius: 50px 50px 0 0;
+  }
+  .titre h1 {
+    text-align: start;
+    margin: 20px;
+  }
+  .titre {
+    justify-content: center;
+    place-items: center;
+  }
+  .menutxt {
+    width: 10%;
+  }
+  .menuliste {
+    width: 100%;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: none;
+  }
+  .menucontenu {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menustyle {
+    width: 90%;
+    min-height: 75px;
+  }
+
+  .menustyle:hover span.menuhover {
+    width: 20%;
+}
+
+span.menuhover {
+    height: 75px;
+}
+  .fa-check-circle {
+    font-size: 6vw;
+    margin-left: 20px;
+  }
+
+  .menucontenu h4 {
+    font-size: 4vw;
+  }
+  .menuprix {
+    margin-top: 40px;
+  }
+  .liste {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .fonclist {
+    font-size: 4.5vw;
+    margin-bottom: 31px;
+  }
+  .fafonc .fas {
+    font-size: 4.5vw;
+  }
+
+  .restaurants {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .result {
+    width: 90%;
+  }
+
+  .new {
+    right: 50px;
+  }
+
+  .fa-heart {
+    margin: 0;
+    margin-right: 35px;
+  }
+  .nom {
+    font-size: 4.5vw;
+  }
+
+  .footermain {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    place-content: baseline;
+    padding: 0;
+  }
+  footer div img {
+    margin: 20px 0 0 20px;
+  }
+  .footermain ul {
+    margin-left: -20px;
+  }
+  .footermain ul li {
+    color: white;
+  }
+}
