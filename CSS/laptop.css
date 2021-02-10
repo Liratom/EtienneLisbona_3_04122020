@@ -38,7 +38,9 @@
   .menucontenu {
     font-size: 1vw;
   }
-
+  .menuprix {
+    margin-top: 39px;
+  }
   .list-restau h1 {
     align-self: flex-start;
     margin-left: 40px;
